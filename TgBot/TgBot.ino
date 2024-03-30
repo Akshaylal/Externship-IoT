@@ -48,10 +48,10 @@ void handleNewMessages(int numNewMessages) {
     if (text == "/start") {
       String welcome = "Welcome, " + from_name + ".\n";
       welcome += "Use the following commands to control your outputs.\n\n";
-      welcome += "/led_on to turn GPIO ON \n";
-      welcome += "/led_off to turn GPIO OFF \n";
-      welcome += "/state to request current GPIO state \n";
-      bot.sendMessage(chat_id, welcome, "");
+      welcome += "/led_on to turn led ON \n";
+      welcome += "/led_off to turn led OFF \n";
+      welcome += "/state to request current led state \n";
+      bot->sendMessage(chat_id, welcome, "");
     }
 
     if (text == "/led_on") {
